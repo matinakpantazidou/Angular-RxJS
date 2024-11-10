@@ -1,0 +1,7 @@
+<div class="container">
+  <div class="photo-grid">
+    <div class="photo-item" *ngFor="let photo of favoritePhotos">
+      <img [src]="getPhotoUrl(photo)" (click)="openSinglePhoto(photo)" alt="Favorite Photo" />
+    </div>
+  </div>
+</div>

@@ -1,0 +1,36 @@
+.photo-grid {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); // 2 columns..
+  grid-template-rows: repeat(2, auto); // ..3 rows each time
+  gap: 0px;
+}
+
+.photo-item {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+
+  img {
+    width: 90%;
+    height: 80%;
+    object-fit: cover;
+    cursor: pointer;
+  }
+}
+
+.loading {
+  grid-column: 1 / -1; // Make the loading div span all columns
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  margin: 20px auto; // Center the circle horizontally and add top margin
+  border-radius: 50%;
+  background-color: #f3f3f3; // Light gray background color
+  border: 5px solid #ccc; // Border color and width
+  text-align: center;
+}
+
+

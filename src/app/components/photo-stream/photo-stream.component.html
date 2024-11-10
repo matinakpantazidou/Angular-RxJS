@@ -1,0 +1,8 @@
+
+<div class="photo-grid">
+  <div class="photo-item" *ngFor="let photo of photos">
+    <img [src]="photo | safeUrl" (click)="addToFavorites(photo)" alt="Random Photo" />
+  </div>
+  <div *ngIf="loading" class="loading">Loading...</div>
+</div>
+

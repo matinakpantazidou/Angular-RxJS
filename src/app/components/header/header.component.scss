@@ -1,0 +1,25 @@
+.header {
+  &.navbar {
+    background-color: #68556e;
+    padding: 40px;
+    display: flex;
+    justify-content: center; // Center the buttons horizontally
+    align-items: center; // Center the buttons vertically
+  }
+
+  .nav-button {
+    margin-right: 170px;
+    color: rgb(69, 112, 97);
+    padding: 15px 30px;
+    font-size: 18px;
+
+    &:last-child {
+      margin-right: 0; // Remove margin from the last button
+    }
+
+    &.active {
+      background-color: #0a4f47; // Highlight color
+      color: white; // Text color for the active button
+    }
+  }
+}
