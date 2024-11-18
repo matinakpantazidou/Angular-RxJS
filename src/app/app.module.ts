@@ -4,12 +4,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
-import { SharedModule } from './shared.module';
 import { PhotoStreamComponent } from './components/photo-stream/photo-stream.component';
 import { FavoriteComponent } from './components/favorites/favorites.component';
 import { SinglePhotoComponent } from './components/single-photo/single-photo.component';
 import { SafeUrlPipe } from './pipes/safe-url.pipe';
 import { RouterModule } from '@angular/router';
+import { HeaderComponent } from './components/header/header.component';
 
 
 @NgModule({
@@ -19,6 +19,7 @@ import { RouterModule } from '@angular/router';
     FavoriteComponent,
     SinglePhotoComponent,
     SafeUrlPipe,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
@@ -26,7 +27,6 @@ import { RouterModule } from '@angular/router';
     BrowserAnimationsModule,
     HttpClientModule,
     RouterModule,
-    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent],
